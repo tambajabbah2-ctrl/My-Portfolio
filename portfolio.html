@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thomas T. Jabbah's portfolio in web development, photography, T-shirt design, agriculture, and ministry.">
+  <title>Thomas T. Jabbah | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="logo">THOMAS<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- YOUR IMAGE IS THE HERO BACKGROUND -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO MY WORLD</p>
+        <h1>Thomas T.<br><span>Jabbah</span></h1>
+        <h2>Build. Create. Serve.</h2>
+        <p class="hero-description">
+          Turning ideas into impact through technology, creative design,
+          photography, agriculture, and faith.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="button button-gold">Explore My Work</a>
+          <a href="#contact" class="button button-outline">Contact Me</a>
+        </div>
+
+        <div class="hero-tags">
+          <span>⌘ Web Development</span>
+          <span>◎ Photography</span>
+          <span>✦ T-Shirt Design</span>
+          <span>✚ AgriNeeds Liberia</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-link">SCROLL TO EXPLORE ↓</a>
+    </section>
+
+    <section class="section about" id="about">
+      <p class="eyebrow">MY STORY</p>
+      <h2>About Me</h2>
+      <p>
+        My name is Thomas T. Jabbah. I am passionate about technology,
+        creative expression, entrepreneurship, and service. I enjoy
+        exploring new ideas and developing projects that can make a
+        positive difference in my community.
+      </p>
+    </section>
+
+    <section class="section skills" id="skills">
+      <p class="eyebrow">WHAT I DO</p>
+      <h2>My Areas of Interest</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <span class="card-icon">⌘</span>
+          <h3>Web Development</h3>
+          <p>Creating responsive websites and learning modern web technologies.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-icon">◎</span>
+          <h3>Photography</h3>
+          <p>Portrait photography, visual storytelling, and creative studio work.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-icon">✦</span>
+          <h3>T-Shirt Design</h3>
+          <p>Apparel graphics, brand identity, and creative merchandise.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-icon">♧</span>
+          <h3>AgriNeeds Liberia</h3>
+          <p>Exploring digital solutions for agricultural needs in Liberia.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-icon">✝</span>
+          <h3>Gospel Ministry</h3>
+          <p>Faith, worship, encouragement, and community service.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-icon">↗</span>
+          <h3>Entrepreneurship</h3>
+          <p>Building ideas into meaningful creative and business projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <p class="eyebrow">WHAT I'M BUILDING</p>
+      <h2>Featured Projects</h2>
+
+      <div class="card-grid project-grid">
+        <article class="card project-card">
+          <span class="project-number">01 / WEB</span>
+          <h3>Personal Portfolio</h3>
+          <p>A home for my skills, creative work, and professional journey.</p>
+          <a href="#contact" class="project-link">Discuss a project →</a>
+        </article>
+
+        <article class="card project-card">
+          <span class="project-number">02 / AGRI</span>
+          <h3>AgriNeeds Liberia</h3>
+          <p>A mobile-friendly agricultural platform concept for Liberia.</p>
+          <a href="#contact" class="project-link">Learn more →</a>
+        </article>
+
+        <article class="card project-card">
+          <span class="project-number">03 / CREATIVE</span>
+          <h3>Jabbah's Tech</h3>
+          <p>A business concept combining T-shirt branding and photography.</p>
+          <a href="#contact" class="project-link">Learn more →</a>
+        </article>
+      </div>
+      <p class="note">Replace these descriptions with your completed work and add project links as they become available.</p>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Have an Idea?</h2>
+      <p>Let's discuss a project, creative collaboration, or opportunity.</p>
+
+      <form id="contactForm">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text"
+          placeholder="Enter your name" required>
+
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email"
+          placeholder="Enter your email" required>
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5"
+          placeholder="How can we work together?" required></textarea>
+
+        <button type="submit" class="button button-gold">Prepare Email ↗</button>
+        <p id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">THOMAS<span>.</span></a>
+    <p>Build. Create. Serve.</p>
+    <p>© <span id="year"></span> Thomas T. Jabbah. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
